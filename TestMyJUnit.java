@@ -11,12 +11,13 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import org.junit.jupiter.api.Test;
 */
 public class TestMyJUnit {
-
+	
 	@Test
 	public void testWelcome1() {
 		String welcomeMessage = "Welcome to JUnit";
 		GreetMessenger greetmsg = new GreetMessenger("Welcome to JUnit");
 		assertEquals("Welcome to JUnit", greetmsg.getGreeting());
+		
 
 	}
 
@@ -42,6 +43,8 @@ public class TestMyJUnit {
 
 		assertEquals("Manager", empJob);
 		System.out.println("EmpJob has passed....");
+		System.out.println("Adding lines");
+		System.out.println("To check in github");
 		assertFalse(empno < 1000);
 		System.out.println("Empno is passed....");
 		assertNotNull(empName);
